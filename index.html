@@ -8,14 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Confer - Conference Event HTML Template</title>
+    <title>Agent John</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -24,73 +26,112 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!-- /Preloader -->
-
-    <!-- Header Area Start -->
-   <div class="limiter">
-    <div class="container-login100">
-        <div class="wrap-login100">
-            <form class="login100-form validate-form" method="POST" action="/verify-login">
-                <span class="login100-form-title p-b-26">
-                    Welcome
-                </span>
-                <span class="login100-form-title p-b-48">
-                    <img height="50px" width="50px" src="/img/new.jpg" alt="">
-                </span>
-
-                <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-                    <input class="input100" type="text" id="email" name="email">
-                    <span class="focus-input100" data-placeholder="Email"></span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Enter password">
-                    <span class="btn-show-pass">
-                        <i class="zmdi zmdi-eye"></i>
-                    </span>
-                    <input class="input100" type="password" id="password" name="password">
-                    <span class="focus-input100" data-placeholder="Password"></span>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-form-title p-b-48">
+                    <img height="70px" width="70px" src="img/logo.png" alt="">
+                    <h3 class="logo">Agent John</h3>
                     
                 </div>
-                <div style="text-align:center;"">
-                <p style="color: tomato;"><%= locals.message %></p>
-                </div>
-                <div class="container-login100-form-btn">
-                    <div class="wrap-login100-form-btn">
-                        <div class="login100-form-bgbtn">
-                           
+                
+               
+                <div class="icons">
+                    <button><i class="material-icons">settings</i></button> 
+                    <button><i class="material-icons">settings_power</i></button>
+                    
+                    </div>
+                    
+                    <div class="card small-card"> 
+                        <button><i style="margin-bottom: -20px;" class="material-icons">collections</i> Media</button>
+                        <button><i class="material-icons">clear</i> Clear chat</button>
+                        <button><i class="material-icons">email</i> Email chat</button>
+    
+                    </div>
+                
+                <div class="container">
+                    
+                       
+                    <hr>
+                            <p class="card text-start">Hello how can i help?</p>
+                        
+                        <hr>
+                        <p class="card text-end">I need a website for my business</p><br>
+                        
+                        <hr style="margin-top: 30px;">
+                        
+                        <div class="gallery js-flickity">
+
+                            <div class="text-card">
+                                <img height=120px" width="200px" src="img/logo.png" alt="">
+                                <p id="item-text">Cafetering</p>
+                                <span ><strike> ₦ 16, 000</strike></span> <span >₦ 15, 000</span>
+                            </div>
+
+                            <div class="text-card">
+                                <img height=120px" width="200px" src="img/logo.png" alt="">
+                                <p id="item-text">Cafetering</p>
+                                <span ><strike> ₦ 16, 000</strike></span> <span >₦ 15, 000</span>
+                            </div>
+
+
+                            <div class="text-card">
+                                <img height=120px" width="200px" src="img/logo.png" alt="">
+                                <p id="item-text">Cafetering</p>
+                                <span ><strike> ₦ 16, 000</strike></span> <span >₦ 15, 000</span>
+                            </div>
+
+                            <div class="text-card">
+                                <img height=120px" width="200px" src="img/logo.png" alt="">
+                                <p id="item-text">Cafetering</p>
+                                <span ><strike> ₦ 16, 000</strike></span> <span >₦ 15, 000</span>
+                            </div>
+                            
+                            
                         </div>
-                        <button onclick="startLoader()" class="login100-form-btn">
-                            Login
-                        </button>
+                        
+                        <hr style="margin-top: 30px;">
+
+<div>
+                        <span class="text-suggest"> View More</span>
+                        <span class="text-suggest"> Personal website</span>
+                        <span class="text-suggest"> Govn't website</span>
+                        <span class="text-suggest"> Customised my website</span>
+                        <span class="text-suggest"> Report an issue</span>
+                        <span class="text-suggest"> More suggestions</span>
+
                     </div>
                 </div>
-                <input style="visibility: hidden;" id="url" name="url" type="text" value="<%= locals.url %>">
-                <div class="text-center">
-                    <span class="txt1">
-                        Don’t have an account?
-                    </span>
 
-                    <a onclick="startLoader()" class="txt2" href="/sign-up">
-                        Sign Up
-                    </a>
-                </div>
-            </form>
+                
+                <form class="login100-form validate-form">
+                   
+                   
+    
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                        <input class="input100" type="text" id="message" name="message" required>
+                        <span class="focus-input100" data-placeholder="Write here"></span>
+                    </div>
+
+
+                    <button style="float: left; margin-right: 10px;" type="button"><i class="material-icons">videocam</i></button>
+                    <button style="float: left; margin-right: 10px;"  type="button"><i class="material-icons">photo_camera</i></button>
+                    <button style="float: left;"  type="button"><i class="material-icons">attachment</i></button>
+                    
+                        <button style="float: right;" type="submit"><i class="material-icons">send</i></button> 
+                        
+                        
+                   
+                </form> 
+            
+            </div>
         </div>
     </div>
-</div>
-    <!-- Footer Area End -->
 
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/confer.bundle.js"></script>
     <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
+    <script src="js/active.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 
 </body>
 
